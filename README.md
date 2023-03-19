@@ -1,4 +1,4 @@
-# PythonCode
+# Python Code
 Python code reference. An overview of Python. 
 
 ## Strings & Printing
@@ -129,3 +129,75 @@ print(monthConversions["Mar"])
 print(monthConversions.get("Mar"))
 print(monthConversions.get("Lov", "Not a valid key")) #Returns Not a valid key since Lov is not present
 ```
+## While Loop
+A while loop is used to repeatedly execute a block of code. The while loop is used to execute the block of code repeatedly as long as a certain condition is true.
+
+```python
+i = 1;
+while i <= 10:
+	print(i)
+	i += 1;
+```
+
+##For loop
+For loops are used to repeatedly execute a block of code. The for loop is used to iterate over a sequence (such as a list, tuple, or string) and execute the block of code for each element in the sequence.
+```python
+for letter in “Hello World”:
+	print(letter)
+
+friends = ["Jim", "Karen", "Kevin"]
+for friend in friends:
+	print(friend)
+
+for index in range(10): #print out 0-10, not including 10
+	print(index)
+
+for index in range(3,10) #print out 3-9
+	print(index) 
+
+for index in range(len(friends)):
+	print(friends[index])
+```
+
+## 2D Lists and Nested Loops
+A 2D list is a list of lists. You can create a 2D list by nesting lists inside other lists. Nested loops are often used to iterate over the elements of a 2D list.
+
+```python
+number_grid = [
+ 	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
+	[10]
+]
+
+print(number_grid[2][1]) #8
+#Printing the rows
+for row in number_grid:
+	print(row)
+	
+#	Output
+#	[1, 2, 3]
+#	[4, 5, 6]
+#	[7, 8, 9]
+#	[10]
+
+#Printing one by one
+for row in number_grid:
+	for col in row:
+		print(col)
+#would output 1 to 10
+```
+
+**Links to Other Helpful Projects**
+------------
+Here are some other projects that are similar to this one.
+
+[Javascript Review](https://github.com/Kttra/JavascriptCode) - An overview of javascript
+
+[C# Review](https://github.com/Kttra/CSharpCode) - An overview of C#
+
+[C++ Review](https://github.com/Kttra/CppCode) - An overview of C++
+
+[C Arrays](https://github.com/Kttra/arraysC) - An overview of arrays in C
+
+[Data Structures](https://github.com/Kttra/DataStructuresCSharp) - Repo where I cover some data structures.
